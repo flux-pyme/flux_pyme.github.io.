@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Nexa Studio | Apps, chatbots y páginas web a la medida</title>
+
+  <!-- ===== SEO · reemplaza el dominio (nexastudio.mx) y las redes por los tuyos reales ===== -->
+  <meta name="description" content="En Nexa Studio diseñamos y desarrollamos apps móviles, chatbots, tiendas en línea, sistemas de citas y páginas web a la medida de tu negocio. Atención en CDMX y todo México." />
+  <meta name="keywords" content="desarrollo de apps, páginas web, chatbots, tiendas en línea, e-commerce, sistemas de citas, catálogos digitales, desarrollo web CDMX, Nexa Studio" />
+  <meta name="author" content="Nexa Studio" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#0e1311" />
+  <meta name="geo.region" content="MX-CMX" />
+  <meta name="geo.placename" content="Ciudad de México" />
+  <link rel="canonical" href="https://www.nexastudio.mx/" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Ctext%20y='.9em'%20font-size='90'%3E%F0%9F%9A%80%3C/text%3E%3C/svg%3E" />
+
+  <!-- Open Graph (WhatsApp, Facebook, LinkedIn) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Nexa Studio" />
+  <meta property="og:locale" content="es_MX" />
+  <meta property="og:title" content="Nexa Studio | Apps, chatbots y páginas web a la medida" />
+  <meta property="og:description" content="Diseñamos y desarrollamos apps móviles, chatbots, tiendas en línea, sistemas de citas y páginas web a la medida de tu negocio." />
+  <meta property="og:url" content="https://www.nexastudio.mx/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1521517407911-565264e7d82d?w=1200&h=630&fit=crop&q=70" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Nexa Studio | Apps, chatbots y páginas web a la medida" />
+  <meta name="twitter:description" content="Apps móviles, chatbots, tiendas en línea, citas y páginas web a la medida de tu negocio." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1521517407911-565264e7d82d?w=1200&h=630&fit=crop&q=70" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0e1311; --bg2:#0b0f0d; --paper:#fbfcfa; --ink:#0f1713; --muted:#647067;
+      --accent:#7ccf00; --accent-2:#aef06a; --accent-d:#5aa400;
+      --line:rgba(255,255,255,.08); --linel:rgba(15,23,19,.09);
+      --wrap:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;color:#e8efe6;font-family:"Plus Jakarta Sans",system-ui,sans-serif;background:var(--bg);-webkit-font-smoothing:antialiased}
+    h1,h2,h3,h4{font-family:"Sora",sans-serif;letter-spacing:-.02em;margin:0}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+    .accent{color:var(--accent)}
+
+    /* NAV */
+    .nav{position:sticky;top:0;z-index:50;background:rgba(12,16,14,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .nav .row{display:flex;align-items:center;justify-content:space-between;height:66px}
+    .brand{display:flex;align-items:center;gap:10px}
+    .brand .logo{width:38px;height:38px;border-radius:11px;background:linear-gradient(150deg,#26331b,#0f1410);display:grid;place-items:center;font-size:19px}
+    .brand b{font-family:"Sora",sans-serif;font-size:17px;font-weight:800}
+    .navlinks{display:flex;gap:26px;align-items:center}
+    .navlinks a{font-size:14px;font-weight:600;color:#bcc8bb;transition:.15s}
+    .navlinks a:hover{color:#fff}
+    .nav-wa{display:inline-flex;align-items:center;gap:7px;background:linear-gradient(180deg,var(--accent-2),var(--accent));color:#0c2200;font-weight:800;padding:10px 16px;border-radius:11px;font-size:13.5px}
+    .nav-wa:hover{filter:brightness(1.04)}
+    .burger{display:none}
+
+    /* HERO */
+    .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+    .hero::before{content:"";position:absolute;inset:0;background:
+      radial-gradient(680px 360px at 78% -10%, rgba(124,207,0,.20), transparent 60%),
+      radial-gradient(560px 360px at 6% 8%, rgba(124,207,0,.12), transparent 55%);pointer-events:none}
+    .hero .wrap{position:relative;padding:78px 24px 70px}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+    .hero-copy{min-width:0}
+    .eyebrow{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);border:1px solid rgba(124,207,0,.3);background:rgba(124,207,0,.07);padding:7px 13px;border-radius:999px}
+    .hero h1{font-size:clamp(34px,5vw,58px);line-height:1.03;font-weight:800;margin:18px 0 0;max-width:16ch}
+    .hero p{color:#aebaad;font-size:clamp(15px,2vw,18px);line-height:1.55;max-width:52ch;margin:18px 0 0}
+    .hero-actions{display:flex;gap:12px;justify-content:flex-start;flex-wrap:wrap;margin-top:28px}
+    .btn-lg{display:inline-flex;align-items:center;gap:8px;padding:15px 24px;border-radius:14px;font-family:"Sora",sans-serif;font-weight:800;font-size:15px;cursor:pointer;border:0}
+    .btn-fill{background:linear-gradient(180deg,var(--accent-2),var(--accent));color:#0c2200;box-shadow:0 14px 30px rgba(124,207,0,.28)}
+    .btn-line{background:transparent;color:#e8efe6;border:1.5px solid rgba(255,255,255,.18)}
+    .hero-tags{display:flex;gap:9px;justify-content:flex-start;flex-wrap:wrap;margin-top:30px}
+    .hero-visual{position:relative}
+    .hero-photo{position:relative;border-radius:24px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 30px 70px rgba(0,0,0,.5);border:1px solid var(--line)}
+    .hero-photo .ph{position:absolute;inset:0}
+    .hero-photo .ph-emoji{font-size:64px}
+    .hero-badge{position:absolute;left:-14px;bottom:26px;background:linear-gradient(180deg,var(--accent-2),var(--accent));color:#0c2200;font-family:"Sora",sans-serif;font-weight:800;font-size:13px;padding:11px 15px;border-radius:14px;box-shadow:0 14px 30px rgba(124,207,0,.32)}
+    .htag{font-size:12.5px;font-weight:700;color:#cfe0c2;background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:999px;padding:8px 14px}
+
+    .section{padding:64px 0}
+    .section.alt{background:linear-gradient(180deg,#0c100e,#0e1311)}
+    .sec-head{text-align:center;max-width:60ch;margin:0 auto 38px}
+    .sec-head .eyebrow{margin-bottom:14px}
+    .sec-head h2{font-size:clamp(26px,4vw,38px);font-weight:800}
+    .sec-head p{color:#9fae9c;font-size:15px;line-height:1.55;margin:12px auto 0}
+
+    /* DEMO */
+    .selector{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:30px}
+    .svc{appearance:none;cursor:pointer;font-family:inherit;color:#e8efe6;background:rgba(255,255,255,.04);border:1.5px solid var(--line);border-radius:16px;padding:13px 16px;display:flex;align-items:center;gap:10px;transition:.18s}
+    .svc .svc-ico{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:rgba(124,207,0,.14);font-size:18px;flex:none}
+    .svc .svc-tx b{display:block;font-size:13.5px;font-weight:800;line-height:1}
+    .svc .svc-tx span{display:block;font-size:11px;color:#93a291;margin-top:3px}
+    .svc:hover{border-color:rgba(124,207,0,.4);transform:translateY(-1px)}
+    .svc.active{border-color:transparent;background:linear-gradient(160deg,#28371b,#0f1410)}
+    .svc.active .svc-ico{background:var(--accent)}
+
+    .stage{display:flex;justify-content:center}
+
+    /* Marco TELÉFONO */
+    .phoneframe{width:min(100%,400px);height:620px;display:flex;flex-direction:column;border-radius:34px;background:linear-gradient(180deg,#0b100e,#0f0f0d);box-shadow:inset 0 0 0 1px rgba(255,255,255,.06),0 30px 60px rgba(0,0,0,.45);overflow:hidden;border:7px solid #05070600;outline:8px solid #14181500}
+    .screen-head{padding:16px 16px 13px;display:flex;align-items:center;justify-content:space-between;color:#fff;background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,0));border-bottom:1px solid rgba(255,255,255,.06);flex:none}
+    .screen-head .title{display:flex;align-items:center;gap:11px;min-width:0}
+    .bot-badge{width:36px;height:36px;border-radius:12px;background:rgba(124,207,0,.16);display:grid;place-items:center;color:#bff071;font-size:18px;flex:none}
+    .screen-head h3{font-size:16px;line-height:1;font-weight:800}
+    .screen-head .sub{margin-top:3px;font-size:11px;color:#9fe04f;font-family:"Plus Jakarta Sans",sans-serif}
+    .live{width:7px;height:7px;border-radius:50%;background:#7CFC00;animation:pulse 1.8s infinite;display:inline-block;margin-right:5px;vertical-align:middle}
+    @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(124,252,0,.5)}70%{box-shadow:0 0 0 7px rgba(124,252,0,0)}100%{box-shadow:0 0 0 0 rgba(124,252,0,0)}}
+    .dots{color:rgba(255,255,255,.4);font-size:18px;letter-spacing:2px}
+
+    /* Marco NAVEGADOR */
+    .webframe{width:min(100%,880px);height:620px;display:flex;flex-direction:column;border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 30px 60px rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.1)}
+    .webbar{display:flex;align-items:center;gap:8px;padding:11px 14px;background:#e9edee;flex:none;border-bottom:1px solid #d7dcdd}
+    .webbar .wd{width:11px;height:11px;border-radius:50%;background:#c5ccca}
+    .webbar .wd:nth-child(1){background:#ff5f57}.webbar .wd:nth-child(2){background:#febc2e}.webbar .wd:nth-child(3){background:#28c840}
+    .urlbar{flex:1;margin-left:8px;background:#fff;border:1px solid #d7dcdd;border-radius:8px;padding:7px 12px;font-size:12px;color:#5b6a5e;font-weight:600;display:flex;align-items:center;gap:6px}
+
+    .app-body{flex:1;min-height:0;overflow-y:auto;padding:14px;scroll-behavior:smooth;color:#f3f6f2}
+    .app-body.web{padding:0;background:#fff;color:#15211a}
+    .app-body::-webkit-scrollbar{width:0;background:transparent}
+    .reveal{animation:rise .36s cubic-bezier(.2,.7,.3,1)}
+    @keyframes rise{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:none}}
+
+    .ph{position:relative;overflow:hidden;background:linear-gradient(150deg,#1d2b18,#12130f);display:grid;place-items:center}
+    .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+    .ph-emoji{position:absolute;font-size:30px;opacity:0;transition:opacity .2s}
+    .ph.noimg .ph-emoji{opacity:.85}
+
+    .btn{appearance:none;border:0;cursor:pointer;font-family:inherit;border-radius:14px;padding:14px 16px;font-weight:800;font-size:13.5px;line-height:1;transition:transform .12s,opacity .2s;letter-spacing:-.01em}
+    .btn:active{transform:scale(.98)}
+    .btn-primary{background:linear-gradient(180deg,var(--accent-2),var(--accent));color:#0c2200;box-shadow:0 10px 22px rgba(124,207,0,.3)}
+    .btn-dark{background:#1b211d;color:#fff;border:1px solid rgba(255,255,255,.08)}
+    .btn-block{width:100%;display:block;margin-top:6px}
+    a.btn{text-decoration:none;text-align:center}
+    .link-btn{appearance:none;border:0;background:transparent;color:#bfe98a;font-weight:800;font-size:12px;cursor:pointer;font-family:inherit;padding:8px 2px}
+
+    /* CHAT */
+    .chatline{display:flex;gap:8px;align-items:flex-end;margin:11px 0}
+    .avatar{width:30px;height:30px;border-radius:11px;flex:none;display:grid;place-items:center;background:rgba(124,207,0,.16);color:#c8ff71;font-size:16px}
+    .bubble{max-width:80%;padding:11px 13px;border-radius:16px;font-size:13.5px;line-height:1.4;color:#f3f6f2}
+    .bubble.bot{background:#191f1a;border:1px solid rgba(255,255,255,.06)}
+    .bubble.user{margin-left:auto;background:linear-gradient(170deg,#5e8a0e,#7ccf00);color:#0c2200;font-weight:700}
+    .bubble .time{display:block;text-align:right;font-size:10px;margin-top:6px;opacity:.55}
+    .typing{padding:13px 15px;display:inline-flex;align-items:center;gap:5px}
+    .typing .dot{width:7px;height:7px;border-radius:50%;background:#9fd45a;opacity:.5;animation:blink 1.2s infinite ease-in-out}
+    .typing .dot:nth-child(2){animation-delay:.18s}.typing .dot:nth-child(3){animation-delay:.36s}
+    @keyframes blink{0%,80%,100%{opacity:.25;transform:translateY(0)}40%{opacity:1;transform:translateY(-3px)}}
+    .quick-row{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end;margin:6px 0 14px;animation:rise .36s cubic-bezier(.2,.7,.3,1)}
+    .chip{appearance:none;cursor:pointer;font-family:inherit;border:1.5px solid rgba(174,240,106,.45);background:rgba(124,207,0,.14);color:#dcffae;border-radius:999px;padding:11px 15px;font-size:13px;font-weight:800;line-height:1;transition:transform .12s,background .15s;animation:chipPulse 2s ease-in-out infinite}
+    .chip:hover{background:rgba(124,207,0,.26)}.chip:active{transform:scale(.95)}
+    @keyframes chipPulse{0%,100%{box-shadow:0 0 0 0 rgba(174,240,106,0)}50%{box-shadow:0 0 0 4px rgba(174,240,106,.12)}}
+    .menu-box{margin:6px 0 12px;padding:12px;border-radius:18px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08)}
+    .menu-title{font-size:13px;font-weight:800;color:#d3ff94;margin-bottom:6px;font-family:"Sora",sans-serif}
+    .menu-item{display:flex;align-items:center;gap:11px;padding:9px 0;border-bottom:1px dashed rgba(255,255,255,.08)}
+    .menu-item:last-child{border-bottom:0}
+    .menu-item .ph{width:48px;height:48px;border-radius:12px;flex:none}.menu-item .ph .ph-emoji{font-size:22px}
+    .menu-item .mi-name{font-size:13px;font-weight:700}.menu-item .mi-desc{font-size:11px;color:#9eb295;margin-top:2px}
+    .menu-item b{margin-left:auto;color:#c7ff6d;font-weight:800;white-space:nowrap}
+
+    .pay-card,.status-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:20px;padding:14px;color:#f3f6f2;margin:6px 0 12px}
+    .pay-card .amount{font-size:28px;font-weight:800;letter-spacing:-.03em;margin:10px 0 0;color:#c7ff6d;font-family:"Sora",sans-serif}
+    .pay-card .amount span{font-size:15px;color:#edf7d8}
+    .field-grid{display:grid;gap:9px;margin-top:13px}
+    .field{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:11px 12px}
+    .field label{display:block;font-size:10px;color:#9ca8a0;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px;font-weight:800}
+    .field div{font-size:13px;color:#f1f6ef;font-weight:700}
+    .countdown{margin:6px 0 12px;padding:13px;border-radius:16px;background:#13180f;border:1px solid rgba(255,255,255,.06)}
+    .countdown-top{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:12px;color:#dde7d7}
+    .countdown-top strong{font-size:14px;color:#fff}
+    .bar{height:11px;border-radius:999px;background:#222a23;overflow:hidden;margin-top:10px;border:1px solid rgba(255,255,255,.06)}
+    .bar>span{display:block;height:100%;width:0%;border-radius:inherit;background:linear-gradient(90deg,#c5ef63,#7ccf00);transition:width .85s linear}
+    .status-good{padding:15px;border-radius:18px;background:linear-gradient(160deg,rgba(124,207,0,.24),rgba(124,207,0,.1));border:1px solid rgba(174,240,106,.24)}
+    .status-good .big{display:flex;align-items:center;gap:10px;font-size:18px;font-weight:800;color:#e6ffc2;font-family:"Sora",sans-serif}
+    .check{width:34px;height:34px;border-radius:50%;background:#8fd416;color:#0e2600;display:grid;place-items:center;font-size:18px;flex:none}
+    .tiny{font-size:12px;color:#e8f4da;opacity:.92;line-height:1.4;margin-top:7px}
+    .info-block{margin-top:11px;padding:12px;border-radius:15px;background:#13180f;border:1px solid rgba(255,255,255,.06)}
+    .info-block .lbl{font-size:11px;color:#9eb295;font-weight:800;text-transform:uppercase;letter-spacing:.05em}
+
+    /* TIENDA */
+    .shop-bar{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:13px}
+    .shop-bar .cat{font-size:15px;font-weight:800;color:#eaffd0;font-family:"Sora",sans-serif}
+    .shop-bar .catsub{font-size:11px;color:#9eb295;margin-top:1px}
+    .cart-pill{appearance:none;font-family:inherit;cursor:pointer;border:1px solid rgba(174,240,106,.32);background:rgba(124,207,0,.12);color:#dcffae;border-radius:999px;padding:9px 13px;font-size:12px;font-weight:800;display:inline-flex;gap:6px;align-items:center}
+    .cart-pill .badge{background:#8fd416;color:#0b2200;border-radius:999px;min-width:18px;height:18px;display:inline-grid;place-items:center;font-size:11px;padding:0 4px}
+    .shop-grid{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+    .prod{appearance:none;font-family:inherit;text-align:left;cursor:pointer;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03);border-radius:18px;overflow:hidden;padding:0;color:#f3f6f2;transition:transform .12s,border-color .2s}
+    .prod:hover{border-color:rgba(174,240,106,.38);transform:translateY(-2px)}.prod:active{transform:scale(.99)}
+    .prod .ph{aspect-ratio:1/1}.prod .ph-emoji{font-size:42px}
+    .prod-body{padding:9px 10px 11px}
+    .prod-name{font-size:13px;font-weight:800;line-height:1.15}
+    .prod-meta{display:flex;align-items:center;justify-content:space-between;margin-top:6px}
+    .stars{font-size:11px;color:#cfe6a8;font-weight:700}
+    .prod-price{font-size:14px;color:#c7ff6d;font-weight:800}
+    .detail-ph{aspect-ratio:4/3;border-radius:18px;overflow:hidden}.detail-ph .ph-emoji{font-size:64px}
+    .detail-name{font-size:21px;font-weight:800;margin-top:13px}
+    .detail-row{display:flex;align-items:center;justify-content:space-between;margin-top:6px}
+    .detail-price{font-size:23px;font-weight:800;color:#c7ff6d;font-family:"Sora",sans-serif}
+    .detail-desc{font-size:13px;color:#aebaa6;margin-top:10px;line-height:1.45}
+    .lbl-s{font-size:11px;font-weight:800;color:#9eb295;text-transform:uppercase;letter-spacing:.07em;margin:15px 0 9px}
+    .size-row{display:flex;flex-wrap:wrap;gap:8px}
+    .size{appearance:none;font-family:inherit;cursor:pointer;border:1.5px solid rgba(255,255,255,.16);background:transparent;color:#eef2eb;border-radius:12px;min-width:48px;padding:11px 13px;font-weight:800;font-size:13px}
+    .size.sel{border-color:#8fd416;background:rgba(143,212,22,.18);color:#fff}
+    .ship-note{font-size:11.5px;color:#9eb295;margin-top:12px;display:flex;align-items:center;gap:6px}
+    .cart-item{display:flex;align-items:center;gap:11px;padding:11px 0;border-bottom:1px dashed rgba(255,255,255,.08)}
+    .cart-item .ph{width:54px;height:54px;border-radius:13px;flex:none}.cart-item .ph-emoji{font-size:24px}
+    .cart-item .ci-name{font-size:13px;font-weight:800}.cart-item .ci-sub{font-size:11px;color:#9eb295;margin-top:2px}
+    .cart-item .ci-price{margin-left:auto;font-weight:800;color:#c7ff6d;white-space:nowrap}
+    .cart-rm{appearance:none;border:0;background:transparent;color:#e98a8a;font-size:15px;cursor:pointer;padding:4px}
+    .cart-total{display:flex;justify-content:space-between;align-items:center;margin:15px 0 4px;font-weight:800}
+    .cart-total .t{font-size:22px;color:#c7ff6d;font-family:"Sora",sans-serif}
+    .empty{text-align:center;color:#9eb295;padding:34px 10px;font-size:13px}
+
+    /* RESERVAS */
+    .book-hero{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:16/9;margin-bottom:6px}
+    .book-hero .ph{position:absolute;inset:0}.book-hero .ph-emoji{font-size:46px}
+    .book-hero .ov{position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,12,8,.1),rgba(8,12,8,.82));display:flex;flex-direction:column;justify-content:flex-end;padding:13px}
+    .book-hero .bh-name{font-size:18px;font-weight:800;font-family:"Sora",sans-serif}
+    .book-hero .bh-meta{font-size:11.5px;color:#d4e6c4;margin-top:3px}
+    .book-intro{font-size:13px;color:#c9d6c2;margin:12px 0;line-height:1.45}
+    .opt{appearance:none;font-family:inherit;width:100%;text-align:left;cursor:pointer;display:flex;align-items:center;gap:12px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03);border-radius:16px;padding:10px;color:#f3f6f2;margin-bottom:10px;transition:border-color .2s,transform .12s}
+    .opt:hover{border-color:rgba(174,240,106,.38)}.opt:active{transform:scale(.99)}
+    .opt .ph{width:50px;height:50px;border-radius:13px;flex:none}.opt .ph-emoji{font-size:24px}
+    .opt .o-name{font-size:14px;font-weight:800}.opt .o-sub{font-size:11px;color:#9eb295;margin-top:2px}
+    .opt .o-price{margin-left:auto;font-weight:800;color:#c7ff6d}
+    .date-row{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px}
+    .date{appearance:none;font-family:inherit;cursor:pointer;flex:none;border:1.5px solid rgba(255,255,255,.14);background:transparent;color:#eef2eb;border-radius:14px;padding:10px 12px;text-align:center;min-width:62px}
+    .date .dow{display:block;font-size:10px;color:#9eb295;text-transform:uppercase;font-weight:800}
+    .date .dnum{display:block;font-size:17px;font-weight:800;margin-top:2px;font-family:"Sora",sans-serif}
+    .date.sel{border-color:#8fd416;background:rgba(143,212,22,.16);color:#fff}
+    .slot-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:6px}
+    .slot{appearance:none;font-family:inherit;cursor:pointer;border:1.5px solid rgba(255,255,255,.14);background:transparent;color:#eef2eb;border-radius:12px;padding:12px 6px;font-weight:800;font-size:13px}
+    .slot.sel{border-color:#8fd416;background:rgba(143,212,22,.18);color:#fff}
+    .slot.busy{opacity:.3;cursor:not-allowed;text-decoration:line-through}
+    .summary{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:14px;margin-top:6px}
+    .summary .row{display:flex;justify-content:space-between;gap:10px;padding:8px 0;font-size:13px;border-bottom:1px dashed rgba(255,255,255,.08)}
+    .summary .row:last-child{border-bottom:0}
+    .summary .k{color:#9eb295}.summary .v{font-weight:800;color:#f1f6ef;text-align:right}
+
+    /* INMOBILIARIA */
+    .estate{appearance:none;font-family:inherit;text-align:left;cursor:pointer;width:100%;display:block;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03);border-radius:18px;overflow:hidden;padding:0;color:#f3f6f2;margin-bottom:12px;transition:transform .12s,border-color .2s}
+    .estate:hover{border-color:rgba(174,240,106,.38);transform:translateY(-2px)}
+    .estate .ph{aspect-ratio:16/10}.estate .ph-emoji{font-size:44px}
+    .estate-body{padding:11px 12px 13px}
+    .estate-price{font-family:"Sora",sans-serif;font-weight:800;color:#c7ff6d;font-size:18px}
+    .estate-title{font-size:14px;font-weight:800;margin-top:3px}
+    .estate-loc{font-size:12px;color:#9eb295;margin-top:3px}
+    .estate-specs{display:flex;gap:13px;margin-top:8px;font-size:12px;color:#cfe6a8;font-weight:700}
+    .estate-specs.big{gap:16px;font-size:13px}
+
+    /* LANDING (dentro del navegador, tema claro) */
+    .lp{color:#15211a;font-size:15px}
+    .lp-hero{position:relative;min-height:340px;display:flex;flex-direction:column;justify-content:flex-end}
+    .lp-hero .ph{position:absolute;inset:0;border-radius:0}.lp-hero .ph-emoji{font-size:60px}
+    .lp-hero .scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,12,8,.35),rgba(8,12,8,.78))}
+    .lp-nav{position:absolute;top:0;left:0;right:0;display:flex;align-items:center;justify-content:space-between;padding:16px 22px;color:#fff;z-index:2}
+    .lp-nav b{font-family:"Sora",sans-serif;font-size:18px}
+    .lp-nav .lp-menu{display:flex;gap:18px;font-size:13px;color:#e7efe2}
+    .lp-hero-ov{position:relative;z-index:2;padding:26px 22px 30px;color:#fff;max-width:560px}
+    .lp-hero-ov .lp-eyebrow{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#bff071}
+    .lp-hero-ov h2{font-size:clamp(26px,4.4vw,40px);font-weight:800;margin-top:10px;line-height:1.05}
+    .lp-hero-ov p{font-size:15px;color:#e7efe2;margin-top:10px;line-height:1.5}
+    .lp-actions{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+    .lp-btn{display:inline-block;background:linear-gradient(180deg,#aef06a,#7ccf00);color:#0c2200;font-weight:800;padding:12px 20px;border-radius:12px;font-size:14px;cursor:pointer}
+    .lp-btn.ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.4)}
+    .lp-section{padding:30px 22px}
+    .lp-section h3{font-size:22px;font-weight:800;text-align:center}
+    .lp-section .lp-sub{text-align:center;color:#69786b;font-size:13.5px;margin-top:6px}
+    .lp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}
+    .lp-card{border:1px solid var(--linel);border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 10px 26px rgba(16,30,18,.06)}
+    .lp-card .ph{aspect-ratio:4/3}.lp-card .ph-emoji{font-size:40px}
+    .lp-card .lp-cbody{padding:11px 13px 14px}
+    .lp-card .lp-cn{font-weight:800;font-size:15px}
+    .lp-card .lp-cd{font-size:12.5px;color:#69786b;margin-top:3px}
+    .lp-card .lp-cp{margin-top:8px;font-weight:800;color:#4f8c00;font-family:"Sora",sans-serif}
+    .lp-about{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:center;padding:30px 22px;background:#f4f7f1}
+    .lp-about .ph{aspect-ratio:4/3;border-radius:16px;overflow:hidden}
+    .lp-about h3{font-size:22px;font-weight:800}
+    .lp-about p{color:#566255;font-size:14px;line-height:1.6;margin-top:10px}
+    .lp-stats{display:flex;gap:22px;margin-top:16px}
+    .lp-stats b{font-family:"Sora",sans-serif;font-size:22px;color:#15211a;display:block}
+    .lp-stats span{font-size:11.5px;color:#69786b}
+    .lp-cta{text-align:center;padding:40px 22px;background:linear-gradient(160deg,#16241a,#0f1812);color:#fff}
+    .lp-cta h3{font-size:24px;font-weight:800}
+    .lp-cta p{color:#cfe0c2;font-size:14px;margin:8px 0 18px}
+    .lp-footer{padding:20px 22px;background:#0c1410;color:#9fae9c;font-size:12px;text-align:center}
+    /* Tema GIMNASIO */
+    .lp.gym .lp-hero-ov h2{text-transform:uppercase;letter-spacing:-.005em}
+    .lp.gym .lp-about{background:#0f1712}
+    .lp.gym .lp-about h3{color:#fff}
+    .lp.gym .lp-about p{color:#aebaad}
+    .lp.gym .lp-about .lp-stats b{color:#fff}
+    .lp.gym .lp-about .lp-stats span{color:#8a9889}
+    .lp.gym .lp-section h3,.lp.gym .lp-cta h3{text-transform:uppercase;letter-spacing:.01em}
+    /* Tema CAFETERÍA */
+    .lp.cafe .lp-eyebrow{color:#ffd9a0}
+    .lp.cafe .lp-btn{background:linear-gradient(180deg,#f0c27b,#d99a3e);color:#3a2410}
+    .lp.cafe .lp-card .lp-cp{color:#b06a12}
+    .lp.cafe .lp-about{background:#f6efe6}
+    .lp.cafe .lp-cta{background:linear-gradient(160deg,#3a2a18,#241810)}
+    .lp.cafe .lp-cta p{color:#e8d6bf}
+
+    /* PLANES / TESTIMONIOS / FAQ (sitio, claro) */
+    .cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .plan{background:#11171430;border:1.5px solid var(--line);border-radius:20px;padding:24px;position:relative}
+    .plan.feat{border-color:rgba(124,207,0,.5);background:linear-gradient(180deg,#172013,#0f1410)}
+    .ribbon{position:absolute;top:-11px;left:24px;background:var(--accent);color:#0c2200;font-size:11px;font-weight:800;padding:5px 11px;border-radius:999px}
+    .plan .pname{font-weight:800;font-size:16px}
+    .plan .pprice{font-family:"Sora",sans-serif;font-size:30px;font-weight:800;margin-top:8px}
+    .plan .pprice small{font-size:13px;color:#93a291;font-weight:600;font-family:"Plus Jakarta Sans"}
+    .plan ul{list-style:none;margin:16px 0 0;padding:0}
+    .plan li{font-size:13.5px;color:#c2cfbf;padding:6px 0 6px 24px;position:relative}
+    .plan li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:800}
+    .plan .btn{margin-top:18px}
+    .tcard{background:#11171430;border:1.5px solid var(--line);border-radius:18px;padding:20px}
+    .tcard .qstars{color:#ffd24a;font-size:14px;letter-spacing:1px}
+    .tcard .quote{font-size:14.5px;line-height:1.55;margin:10px 0 14px;color:#dfe8da}
+    .tcard .who{display:flex;align-items:center;gap:11px}
+    .tcard .who .av{width:42px;height:42px;border-radius:50%;background:linear-gradient(150deg,#cdeC9c,#7ccf00);display:grid;place-items:center;font-weight:800;color:#0c2200;overflow:hidden;flex:none}
+    .tcard .who .av img{width:100%;height:100%;object-fit:cover}
+    .tcard .who b{font-size:14px;display:block}.tcard .who span{font-size:12px;color:#93a291}
+    .faqwrap{max-width:760px;margin:0 auto}
+    .faq{background:#11171430;border:1.5px solid var(--line);border-radius:14px;margin-bottom:10px;overflow:hidden}
+    .faq summary{cursor:pointer;list-style:none;padding:16px 18px;font-weight:800;font-size:15px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq summary::after{content:"⌄";font-size:18px;color:var(--accent);transition:transform .2s}
+    .faq[open] summary::after{transform:rotate(180deg)}
+    .faq .a{padding:0 18px 16px;font-size:14px;color:#aebaad;line-height:1.55}
+    .note{font-size:11.5px;color:#7e8c7e;margin-top:14px;text-align:center}
+
+    footer.site{border-top:1px solid var(--line);background:#0b0f0d;padding:48px 0 40px}
+    .ftgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:28px}
+    .ftgrid h4{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:#8a9889;margin-bottom:14px;font-family:"Plus Jakarta Sans";font-weight:800}
+    .ftgrid a{display:block;color:#b9c6b8;font-size:14px;padding:5px 0}
+    .ftgrid a:hover{color:#fff}
+    .ft-tag{color:#93a291;font-size:13.5px;line-height:1.5;margin:12px 0 16px;max-width:34ch}
+    .ft-wa{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(180deg,var(--accent-2),var(--accent));color:#0c2200;font-weight:800;border-radius:12px;padding:12px 18px;font-size:14px}
+    .ft-copy{border-top:1px solid var(--line);margin-top:34px;padding-top:22px;color:#6f7d6e;font-size:12px;text-align:center}
+
+    .cw-launch{position:fixed;right:20px;bottom:20px;z-index:60;display:inline-flex;align-items:center;gap:9px;background:linear-gradient(180deg,var(--accent-2),var(--accent));color:#0c2200;font-family:"Sora",sans-serif;font-weight:800;font-size:14px;padding:14px 18px;border-radius:999px;box-shadow:0 14px 30px rgba(0,0,0,.35);cursor:pointer;border:0}
+    .cw-launch:active{transform:scale(.97)}
+    .cw-launch .ico{font-size:18px}
+    .cw-launch.hide{display:none}
+    .cw-panel{position:fixed;right:20px;bottom:20px;z-index:61;width:min(92vw,360px);height:min(76vh,560px);display:none;flex-direction:column;background:#0e1311;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.55)}
+    .cw-panel.open{display:flex}
+    .cw-head{display:flex;align-items:center;gap:11px;padding:14px;background:linear-gradient(180deg,rgba(124,207,0,.12),transparent);border-bottom:1px solid var(--line)}
+    .cw-head .ava{width:38px;height:38px;border-radius:12px;background:rgba(124,207,0,.16);display:grid;place-items:center;font-size:19px;flex:none}
+    .cw-head h4{font-family:"Sora",sans-serif;font-size:15px;line-height:1}
+    .cw-head .st{font-size:11px;color:#9fe04f;margin-top:3px}
+    .cw-x{margin-left:auto;background:transparent;border:0;color:#8a9889;font-size:18px;cursor:pointer;line-height:1;padding:4px}
+    .cw-body{flex:1;min-height:0;overflow-y:auto;padding:14px;scroll-behavior:smooth}
+    .cw-body::-webkit-scrollbar{width:0;background:transparent}
+    .cw-foot{padding:10px 12px;border-top:1px solid var(--line);text-align:center}
+    .cw-foot a{font-size:11.5px;color:#9aa899;font-weight:700}
+    .cw-foot a:hover{color:#cfe0c2}
+
+    @media (max-width:860px){
+      .cards3,.lp-grid{grid-template-columns:1fr}
+      .lp-about{grid-template-columns:1fr}
+      .ftgrid{grid-template-columns:1fr;gap:24px}
+      .navlinks{display:none}
+      .section{padding:48px 0}
+      .hero .wrap{padding:54px 22px 48px}
+      .hero-grid{grid-template-columns:1fr;gap:32px;text-align:center}
+      .hero-copy .hero-actions,.hero-copy .hero-tags{justify-content:center}
+      .hero h1,.hero p{margin-left:auto;margin-right:auto}
+      .hero-visual{order:-1}
+      .hero-photo{aspect-ratio:16/11;max-width:460px;margin:0 auto}
+      .hero-badge{left:10px}
+      .phoneframe,.webframe{height:560px}
+      .cw-launch .lbl{display:none}.cw-launch{padding:15px}
+      .cw-panel{right:12px;bottom:12px;width:calc(100vw - 24px);height:min(80vh,600px)}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Nexa Studio",
+    "description": "Diseño y desarrollo de apps móviles, chatbots, tiendas en línea, sistemas de citas y páginas web a la medida.",
+    "url": "https://www.nexastudio.mx/",
+    "telephone": "+52 56 1171 7050",
+    "image": "https://images.unsplash.com/photo-1521517407911-565264e7d82d?w=1200&h=630&fit=crop&q=70",
+    "priceRange": "$$",
+    "areaServed": { "@type": "City", "name": "Ciudad de México" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Ciudad de México", "addressCountry": "MX" },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "09:00",
+      "closes": "19:00"
+    },
+    "sameAs": ["https://www.instagram.com/nexastudio", "https://www.facebook.com/nexastudio"],
+    "makesOffer": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Desarrollo de chatbots" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tiendas en línea y e-commerce" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sistemas de citas y reservas" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Catálogos digitales" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Diseño y desarrollo de páginas web" } }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "¿Cuánto tarda en estar listo?", "acceptedAnswer": { "@type": "Answer", "text": "Un chatbot, catálogo o landing sencillo suele estar listo en 1 a 2 semanas. Los proyectos a la medida dependen del alcance, pero siempre damos una fecha clara antes de empezar." } },
+      { "@type": "Question", "name": "¿Funciona con WhatsApp?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Conectamos pedidos, citas y mensajes directo a tu WhatsApp para que atiendas todo desde un solo lugar." } },
+      { "@type": "Question", "name": "¿Puedo usar mi marca y mis fotos?", "acceptedAnswer": { "@type": "Answer", "text": "Claro. Adaptamos colores, logo, nombre y fotografías a tu negocio para que todo se vea 100% tuyo." } },
+      { "@type": "Question", "name": "¿Aceptan pagos en línea?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, integramos transferencia y otros métodos. En los demos puedes ver el flujo de cobro y validación automática." } }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap row">
+      <a class="brand" href="#top"><span class="logo">🚀</span><b>Nexa Studio</b></a>
+      <nav class="navlinks">
+        <a href="#webs">Páginas web</a>
+        <a href="#apps">Apps</a>
+        <a href="#planes">Planes</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a class="nav-wa" href="https://wa.me/525611717050?text=Hola%20%F0%9F%91%8B%20Quiero%20informaci%C3%B3n%20sobre%20una%20app%20o%20p%C3%A1gina%20web." target="_blank" rel="noopener">💬 WhatsApp</a>
+    </div>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">Soluciones digitales</span>
+        <h1>Apps y páginas web <span class="accent">a la medida</span> de tu negocio</h1>
+        <p>Chatbots que venden, tiendas en línea, sistemas de citas, catálogos y sitios web. Diseñamos, programamos y lanzamos — pruébalo todo en vivo aquí abajo.</p>
+        <div class="hero-actions">
+          <a class="btn-lg btn-fill" href="#webs">Ver los demos ↓</a>
+          <a class="btn-lg btn-line" href="https://wa.me/525611717050?text=Hola%20%F0%9F%91%8B%20Me%20interesa%20una%20app%20o%20p%C3%A1gina%20web%20para%20mi%20negocio." target="_blank" rel="noopener">Hablar por WhatsApp</a>
+        </div>
+        <div class="hero-tags">
+          <span class="htag">🤖 Chatbots</span><span class="htag">🛍️ E-commerce</span><span class="htag">📅 Reservas</span><span class="htag">🏠 Catálogos</span><span class="htag">🌐 Páginas web</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-photo"><div class="ph"><img src="https://images.unsplash.com/photo-1521517407911-565264e7d82d?w=900&q=75&auto=format&fit=crop" alt="Persona usando una app en el teléfono" loading="lazy" decoding="async" onerror="this.closest('.ph').classList.add('noimg');this.remove();"><span class="ph-emoji">📱</span></div></div>
+        <div class="hero-badge">★ 4.9 · clientes felices</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="webs">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Páginas web</span>
+        <h2>Sitios web que enamoran</h2>
+        <p>Diseños a la medida para tu negocio. Pruébalos en un navegador real.</p>
+      </div>
+      <div class="selector" id="webSel">
+        <button class="svc active" type="button" data-web="laterraza"><span class="svc-ico">🍔</span><span class="svc-tx"><b>Restaurante</b><span>La Terraza</span></span></button>
+        <button class="svc" type="button" data-web="pulsefit"><span class="svc-ico">💪</span><span class="svc-tx"><b>Gimnasio</b><span>PulseFit</span></span></button>
+        <button class="svc" type="button" data-web="cafe"><span class="svc-ico">☕</span><span class="svc-tx"><b>Cafetería</b><span>Café Aurora</span></span></button>
+      </div>
+      <div class="stage" id="stageWeb"></div>
+    </div>
+  </section>
+
+  <section class="section alt" id="apps">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Apps móviles</span>
+        <h2>Apps que venden por ti</h2>
+        <p>Chatbots, tiendas, reservas y catálogos — pruébalos en un teléfono.</p>
+      </div>
+      <div class="selector" id="appSel">
+        <button class="svc active" type="button" data-app="comida"><span class="svc-ico">🍔</span><span class="svc-tx"><b>Restaurante</b><span>Chatbot</span></span></button>
+        <button class="svc" type="button" data-app="ropa"><span class="svc-ico">🛍️</span><span class="svc-tx"><b>Tienda</b><span>E-commerce</span></span></button>
+        <button class="svc" type="button" data-app="reservas"><span class="svc-ico">📅</span><span class="svc-tx"><b>Citas</b><span>Reservas</span></span></button>
+        <button class="svc" type="button" data-app="inmueble"><span class="svc-ico">🏠</span><span class="svc-tx"><b>Inmobiliaria</b><span>Catálogo</span></span></button>
+      </div>
+      <div class="stage" id="stageApp"></div>
+    </div>
+  </section>
+
+  <section class="section alt" id="planes">
+    <div class="wrap">
+      <div class="sec-head"><span class="eyebrow">Planes</span><h2>Elige cómo empezar</h2><p>Paquetes claros para arrancar rápido. Personalizamos todo a tu marca.</p></div>
+      <div class="cards3">
+        <div class="plan">
+          <div class="pname">🤖 Chatbot</div>
+          <div class="pprice">$2,500 <small>/ mes</small></div>
+          <ul><li>Toma pedidos por WhatsApp</li><li>Catálogo y cobro</li><li>Soporte básico</li></ul>
+          <a class="btn btn-dark plan-cta" href="#" data-plan="Chatbot">Empezar</a>
+        </div>
+        <div class="plan feat">
+          <div class="ribbon">Más popular</div>
+          <div class="pname">🛍️ Tienda en línea</div>
+          <div class="pprice">$4,900 <small>/ mes</small></div>
+          <ul><li>Catálogo + carrito + pagos</li><li>Inventario y pedidos</li><li>Diseño a tu marca</li></ul>
+          <a class="btn btn-primary plan-cta" href="#" data-plan="Tienda en línea">Empezar</a>
+        </div>
+        <div class="plan">
+          <div class="pname">🌐 Web / A la medida</div>
+          <div class="pprice">Cotización</div>
+          <ul><li>Páginas web y landing</li><li>Citas, catálogos y más</li><li>Integraciones a medida</li></ul>
+          <a class="btn btn-dark plan-cta" href="#" data-plan="página web o proyecto a la medida">Cotizar</a>
+        </div>
+      </div>
+      <div class="note">* Precios de ejemplo — ajústalos a tus paquetes reales.</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="sec-head"><span class="eyebrow">Testimonios</span><h2>Negocios que ya venden más</h2></div>
+      <div class="cards3">
+        <div class="tcard"><div class="qstars">★★★★★</div><div class="quote">"El chatbot contesta solo y dejamos de perder pedidos por la noche. En un mes subimos 30%."</div><div class="who"><div class="av"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=120&q=70&auto=format&fit=crop&crop=faces" alt="" loading="lazy" onerror="this.outerHTML='L'"></div><div><b>Laura M.</b><span>Taquería El Güero</span></div></div></div>
+        <div class="tcard"><div class="qstars">★★★★★</div><div class="quote">"La tienda quedó hermosa y fácil de usar. Mis clientes compran desde el celular sin batallar."</div><div class="who"><div class="av"><img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=120&q=70&auto=format&fit=crop&crop=faces" alt="" loading="lazy" onerror="this.outerHTML='C'"></div><div><b>Carlos R.</b><span>Boutique Aura</span></div></div></div>
+        <div class="tcard"><div class="qstars">★★★★★</div><div class="quote">"La agenda nos quitó las llamadas y los huecos. Todo llega organizado por WhatsApp."</div><div class="who"><div class="av"><img src="https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?w=120&q=70&auto=format&fit=crop&crop=faces" alt="" loading="lazy" onerror="this.outerHTML='M'"></div><div><b>Miguel Á.</b><span>BarberArte</span></div></div></div>
+      </div>
+      <div class="note">* Testimonios de muestra — reemplázalos por reseñas reales.</div>
+    </div>
+  </section>
+
+  <section class="section alt" id="faq">
+    <div class="wrap">
+      <div class="sec-head"><span class="eyebrow">Preguntas frecuentes</span><h2>Lo que más nos preguntan</h2></div>
+      <div class="faqwrap">
+        <details class="faq" open><summary>¿Cuánto tarda en estar listo?</summary><div class="a">Un chatbot, catálogo o landing sencillo suele estar listo en 1–2 semanas. Proyectos a la medida dependen del alcance, pero siempre te damos una fecha clara antes de empezar.</div></details>
+        <details class="faq"><summary>¿Funciona con WhatsApp?</summary><div class="a">Sí. Conectamos pedidos, citas y mensajes directo a tu WhatsApp para que atiendas todo desde un solo lugar.</div></details>
+        <details class="faq"><summary>¿Puedo usar mi marca y mis fotos?</summary><div class="a">Claro. Adaptamos colores, logo, nombre y fotografías a tu negocio para que todo se vea 100% tuyo.</div></details>
+        <details class="faq"><summary>¿Aceptan pagos en línea?</summary><div class="a">Sí, integramos transferencia y otros métodos. En los demos verás el flujo de cobro y validación automática.</div></details>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site" id="contacto">
+    <div class="wrap">
+      <div class="ftgrid">
+        <div>
+          <a class="brand" href="#top"><span class="logo">🚀</span><b>Nexa Studio</b></a>
+          <p class="ft-tag">Apps y páginas web a la medida: chatbots, tiendas en línea, reservas y catálogos.</p>
+          <a class="ft-wa" href="https://wa.me/525611717050?text=Hola%20%F0%9F%91%8B%20Quiero%20informaci%C3%B3n." target="_blank" rel="noopener">💬 WhatsApp 56 1171 7050</a>
+        </div>
+        <div>
+          <h4>Servicios</h4>
+          <a href="#apps">Chatbots</a><a href="#apps">Tiendas en línea</a><a href="#apps">Reservas / citas</a><a href="#webs">Páginas web</a>
+        </div>
+        <div>
+          <h4>Síguenos</h4>
+          <a href="#" target="_blank" rel="noopener">📷 Instagram</a><a href="#" target="_blank" rel="noopener">📘 Facebook</a><a href="#" target="_blank" rel="noopener">🌐 Sitio web</a>
+          <h4 style="margin-top:18px">Ubicación</h4>
+          <a>📍 Ciudad de México · Lun–Sáb 9–19h</a>
+        </div>
+      </div>
+      <div class="ft-copy">© 2025 Nexa Studio · Demo. Nombres, precios, fotos y redes son de muestra.</div>
+    </div>
+  </footer>
+
+  <!-- El asistente flotante se inyecta por JS al final del script -->
+
+  <script>
+    const webButtons = Array.from(document.querySelectorAll('#webSel .svc'));
+    const appButtons = Array.from(document.querySelectorAll('#appSel .svc'));
+    const stageWeb = document.getElementById('stageWeb');
+    const stageApp = document.getElementById('stageApp');
+    const WA_NUMBER = '525611717050';
+    let session = 0, valTimer = null, currentKey = 'comida';
+    let body = null, titleEl = null, subEl = null, badgeEl = null;
+
+    const sleep = (ms) => new Promise(r => setTimeout(r, ms));
+    const money = (n) => `$${n.toLocaleString('es-MX')} MXN`;
+    const orderNum = () => Math.floor(4000 + Math.random() * 5000);
+    const setSub = (html) => { if (subEl) subEl.innerHTML = html; };
+    const liveSub = (t) => `<span class="live"></span>${t}`;
+    const el = (html) => { const d = document.createElement('div'); d.innerHTML = html.trim(); return d.firstElementChild; };
+    const scrollTop = () => { if (body) body.scrollTop = 0; };
+    const scrollBottom = () => { if (body) body.scrollTop = body.scrollHeight; };
+    const waUrl = (msg) => `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent('Hola 👋 ' + msg)}`;
+    const waBtn = (label, summary) => `<a class="btn btn-primary btn-block" href="${waUrl(summary)}" target="_blank" rel="noopener" style="margin-top:12px;">💬 ${label}</a>`;
+
+    function ph(id, lock, emoji, extra){
+      return `<div class="ph ${extra || ''}"><img src="https://images.unsplash.com/photo-${id}?w=640&q=70&auto=format&fit=crop" alt="" loading="lazy" decoding="async" onerror="this.closest('.ph').classList.add('noimg');this.remove();"><span class="ph-emoji">${emoji}</span></div>`;
+    }
+    function bankFieldsHtml(num){
+      return `<div class="field-grid"><div class="field"><label>Banco</label><div>BBVA</div></div><div class="field"><label>CLABE</label><div>012 180 •••• •••• 9821</div></div><div class="field"><label>Referencia</label><div>NX-${num}</div></div><div class="field"><label>Titular</label><div>Nexa Studio</div></div></div>`;
+    }
+    function validationCardHtml(){
+      return `<div class="countdown"><div class="countdown-top"><span>Esperando confirmación bancaria</span><strong class="count">20 s</strong></div><div class="bar"><span class="prog"></span></div><div style="margin-top:10px;font-size:12px;color:#dfe8db;line-height:1.35;">Validación automática en curso. No cierres esta ventana.</div></div>`;
+    }
+    function runValidation(countLabel, progressBar, my){
+      return new Promise((resolve) => {
+        let n = 20; countLabel.textContent = n + ' s'; progressBar.style.width = '0%';
+        valTimer = setInterval(() => {
+          if (my !== session){ clearInterval(valTimer); valTimer = null; resolve(false); return; }
+          n -= 1; progressBar.style.width = Math.min(100, ((20 - n) / 20) * 100) + '%'; countLabel.textContent = Math.max(n, 0) + ' s';
+          if (n <= 0){ clearInterval(valTimer); valTimer = null; resolve(true); }
+        }, 1000);
+      });
+    }
+
+    /* ===== APP 1 · CHATBOT ===== */
+    const ChatApp = {
+      name: 'FoodBot', badge: '🍔', sub: liveSub('En línea · atención 24/7'), frame: 'phone',
+      mount(container){
+        const my = session;
+        let clock = new Date(); clock.setHours(13, 40, 0, 0);
+        const stamp = () => { clock.setMinutes(clock.getMinutes() + 1); return clock.toLocaleTimeString('es-MX', { hour: '2-digit', minute: '2-digit', hour12: false }); };
+        const order = { item: null, num: orderNum() };
+        const addBot = (h) => { container.appendChild(el(`<div class="chatline reveal"><div class="avatar">🤖</div><div class="bubble bot">${h}<span class="time">${stamp()}</span></div></div>`)); scrollBottom(); };
+        const addUser = (h) => { container.appendChild(el(`<div class="chatline reveal"><div class="bubble user">${h}<span class="time">${stamp()}</span></div></div>`)); scrollBottom(); };
+        const addCard = (h) => { const w = el(`<div class="reveal">${h}</div>`); container.appendChild(w); scrollBottom(); return w; };
+        const showTyping = () => { const t = el(`<div class="chatline reveal"><div class="avatar">🤖</div><div class="bubble bot typing"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>`); container.appendChild(t); scrollBottom(); return t; };
+        const chips = (opts, onPick) => { const row = el('<div class="quick-row"></div>'); opts.forEach(o => { const b = el(`<button class="chip" type="button"></button>`); b.textContent = o.label; b.onclick = () => { row.remove(); onPick(o); }; row.appendChild(b); }); container.appendChild(row); scrollBottom(); };
+        const botSay = async (h, ms = 1300) => { setSub('escribiendo…'); const t = showTyping(); await sleep(ms); if (my !== session) return false; t.remove(); setSub(liveSub('En línea · atención 24/7')); addBot(h); return true; };
+        const MENU = [
+          { name: 'Combo Clásico', desc: 'Hamburguesa, papas y refresco', price: 165, emoji: '🍔', kw: '1568901346375-23c9450c58cd' },
+          { name: 'Combo Doble', desc: 'Doble carne y queso', price: 195, emoji: '🍔', kw: '1572802419224-296b0aeee0d9' },
+          { name: 'Combo BBQ Bacon', desc: 'Tocino crujiente y salsa BBQ', price: 189, emoji: '🍔', kw: '1571091718767-18b5b1457add' },
+        ];
+        (async () => {
+          if (!(await botSay('¡Hola! 👋 Soy <b>FoodBot</b>. ¿Qué se te antoja hoy?', 1200)) || my !== session) return;
+          chips([{ label: 'Ver el menú 🍔' }], async () => {
+            addUser('Ver el menú 🍔');
+            const rows = MENU.map(i => `<div class="menu-item">${ph(i.kw, 0, i.emoji)}<div><div class="mi-name">${i.name}</div><div class="mi-desc">${i.desc}</div></div><b>$${i.price}</b></div>`).join('');
+            if (!(await botSay('¡Claro! Mira nuestro menú 👇', 1300)) || my !== session) return;
+            addCard(`<div class="menu-box"><div class="menu-title">Menú de hoy</div>${rows}</div>`);
+            await sleep(280); if (my !== session) return;
+            if (!(await botSay('¿Cuál te late?', 900)) || my !== session) return;
+            chips(MENU.map((it, i) => ({ label: it.name, i })), (o) => { order.item = MENU[o.i]; addUser(`${order.item.name} ${order.item.emoji}`); askPay(); });
+          });
+          async function askPay(){
+            if (!(await botSay(`¡Excelente! <b>${order.item.name}</b> — ${money(order.item.price)}.<br>¿Cómo quieres pagar?`, 1500)) || my !== session) return;
+            chips([{ label: 'Efectivo 💵', v: 'cash' }, { label: 'Transferencia 💳', v: 'tr' }], (o) => { if (o.v === 'cash'){ addUser('Pagaré en efectivo 💵'); cash(); } else { addUser('Por transferencia 💳'); transfer(); } });
+          }
+          async function cash(){
+            if (!(await botSay(`¡Listo! Pagas <b>${money(order.item.price)}</b> al recibir. ¿Confirmamos?`, 1400)) || my !== session) return;
+            chips([{ label: 'Confirmar pedido ✅' }], () => { addUser('Confirmar pedido ✅'); done('cash'); });
+          }
+          async function transfer(){
+            const card = `<div class="pay-card"><div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px;"><div><div style="font-size:12px;color:#9fb39d;font-weight:800;">Pedido #${order.num}</div><div style="font-size:18px;font-weight:800;margin-top:2px;">${order.item.name}</div></div>${ph(order.item.kw, 0, order.item.emoji, 'pc-img')}</div><div style="margin-top:12px;color:#aab6aa;font-size:12px;font-weight:800;">TOTAL A PAGAR</div><div class="amount">$${order.item.price} <span>MXN</span></div>${bankFieldsHtml(order.num)}</div>`;
+            if (!(await botSay('¡Genial! 🙌 Estos son los datos para tu transferencia:', 1500)) || my !== session) return;
+            const c = addCard(card); const im = c.querySelector('.pc-img'); if (im){ im.style.width = '58px'; im.style.height = '58px'; im.style.borderRadius = '16px'; im.style.flex = 'none'; }
+            await sleep(280); if (my !== session) return;
+            if (!(await botSay('Cuando transfieras, toca <b>Ya transferí</b> y la valido al instante ✅', 1500)) || my !== session) return;
+            chips([{ label: 'Ya transferí ✅' }], async () => {
+              addUser('Ya transferí ✅'); setSub('Validando transferencia…');
+              if (!(await botSay('¡Gracias! Validando con el banco… ⏳', 1300)) || my !== session) return;
+              const v = addCard(validationCardHtml());
+              const okv = await runValidation(v.querySelector('.count'), v.querySelector('.prog'), my);
+              if (!okv || my !== session) return; done('tr');
+            });
+          }
+          async function done(mode){
+            setSub(liveSub(mode === 'tr' ? 'Pago confirmado' : 'Pedido confirmado'));
+            if (!(await botSay(mode === 'tr' ? '¡Transferencia confirmada! 🎉 Tu pedido va a cocina.' : '¡Pedido confirmado! 🎉 Ya lo preparamos.', 1300)) || my !== session) return;
+            const head = mode === 'tr' ? `<div class="big"><span class="check">✓</span> ¡PAGO CONFIRMADO!</div><div class="tiny">${order.item.name} · ${money(order.item.price)} recibidos</div>` : `<div class="big"><span class="check">✓</span> ¡PEDIDO CONFIRMADO!</div><div class="tiny">${order.item.name} · pagas ${money(order.item.price)} al recibir</div>`;
+            addCard(`<div class="status-card"><div class="status-good">${head}</div><div class="info-block"><div class="lbl">Estado</div><div style="display:flex;align-items:center;gap:10px;margin-top:8px;"><div class="check" style="width:30px;height:30px;background:#1b211d;color:#fff;">🍳</div><div><div style="font-size:15px;font-weight:800;color:#dfffac;">En preparación</div><div style="font-size:12px;color:#dfe8db;opacity:.9;">Cocina notificada</div></div></div></div><div class="info-block"><div class="lbl">Entrega estimada</div><div style="font-size:22px;font-weight:800;color:#c7ff6d;margin-top:6px;font-family:Sora;">25 MINUTOS</div></div></div>`);
+            addCard(waBtn('Enviar pedido por WhatsApp', `Quiero pedir: ${order.item.name} (${money(order.item.price)}). ¿Me ayudan a completarlo?`));
+            await sleep(500); if (my !== session) return;
+            await botSay('¡Gracias por tu compra! 🛵', 1100);
+          }
+        })();
+      }
+    };
+
+    /* ===== APP 2 · TIENDA ===== */
+    const ShopApp = {
+      name: 'ModaShop', badge: '🛍️', sub: liveSub('Tienda en línea'), frame: 'phone',
+      products: [
+        { name: 'Playera Oversize', desc: 'Algodón premium peinado, corte holgado y caída perfecta.', price: 349, emoji: '👕', kw: '1588117260148-b47818741c74', rating: '4.8', sizes: ['CH', 'M', 'G', 'XG'] },
+        { name: 'Chamarra Urbana', desc: 'Estilo streetwear, tela resistente y forro suave.', price: 899, emoji: '🧥', kw: '1523398002811-999ca8dec234', rating: '4.9', sizes: ['CH', 'M', 'G', 'XG'] },
+        { name: 'Conjunto Casual', desc: 'Look completo listo para salir, cómodo y moderno.', price: 749, emoji: '🕶️', kw: '1538329972958-465d6d2144ed', rating: '4.7', sizes: ['CH', 'M', 'G', 'XG'] },
+      ],
+      mount(container){
+        const my = session;
+        const state = { cart: [], num: orderNum() };
+        const total = () => state.cart.reduce((s, i) => s + i.price, 0);
+        const render = (fn) => { if (my !== session) return; container.innerHTML = ''; fn(); scrollTop(); };
+        const cartBar = () => `<div class="shop-bar"><div><div class="cat">ModaShop</div><div class="catsub">Envío gratis +$599</div></div><button class="cart-pill" id="goCart" type="button">🛒 <span class="badge">${state.cart.length}</span></button></div>`;
+        function grid(){
+          render(() => {
+            container.appendChild(el(cartBar()));
+            const cards = ShopApp.products.map((p, i) => `<button class="prod reveal" type="button" data-i="${i}">${ph(p.kw, 0, p.emoji)}<div class="prod-body"><div class="prod-name">${p.name}</div><div class="prod-meta"><span class="stars">★ ${p.rating}</span><span class="prod-price">$${p.price}</span></div></div></button>`).join('');
+            container.appendChild(el(`<div class="shop-grid">${cards}</div>`));
+            container.querySelector('#goCart').onclick = cart;
+            container.querySelectorAll('.prod').forEach(b => b.onclick = () => detail(ShopApp.products[+b.dataset.i]));
+          });
+        }
+        function detail(p){
+          render(() => {
+            let size = null;
+            container.appendChild(el(cartBar())); container.querySelector('#goCart').onclick = cart;
+            const box = el(`<div class="reveal"><button class="link-btn" id="back" type="button">← Volver</button>${ph(p.kw, 0, p.emoji, 'detail-ph')}<div class="detail-name">${p.name}</div><div class="detail-row"><span class="stars">★ ${p.rating} · 120 reseñas</span><span class="detail-price">$${p.price}</span></div><div class="detail-desc">${p.desc}</div><div class="lbl-s">Elige tu talla</div><div class="size-row" id="sizes"></div><div class="ship-note">🚚 Envío en 2–3 días · Cambios gratis</div><button class="btn btn-primary btn-block" id="add" type="button" style="margin-top:14px;opacity:.5;" disabled>Agregar al carrito</button></div>`);
+            container.appendChild(box);
+            const sizesEl = box.querySelector('#sizes'), addBtn = box.querySelector('#add');
+            p.sizes.forEach(s => { const b = el(`<button class="size" type="button"></button>`); b.textContent = s; b.onclick = () => { size = s; sizesEl.querySelectorAll('.size').forEach(x => x.classList.remove('sel')); b.classList.add('sel'); addBtn.disabled = false; addBtn.style.opacity = '1'; }; sizesEl.appendChild(b); });
+            box.querySelector('#back').onclick = grid;
+            addBtn.onclick = () => { if (!size) return; state.cart.push({ name: p.name, size, price: p.price, emoji: p.emoji, kw: p.kw }); cart(); };
+          });
+        }
+        function cart(){
+          render(() => {
+            container.appendChild(el(cartBar())); container.querySelector('#goCart').onclick = cart;
+            if (!state.cart.length){ const e = el(`<div class="empty reveal">Tu carrito está vacío 🛒<br><br><button class="btn btn-dark" id="shop" type="button">Ver productos</button></div>`); container.appendChild(e); e.querySelector('#shop').onclick = grid; return; }
+            const rows = state.cart.map((it, i) => `<div class="cart-item">${ph(it.kw, 0, it.emoji)}<div><div class="ci-name">${it.name}</div><div class="ci-sub">Talla ${it.size}</div></div><div class="ci-price">$${it.price}</div><button class="cart-rm" type="button" data-i="${i}">✕</button></div>`).join('');
+            const box = el(`<div class="reveal">${rows}<div class="cart-total"><span>Total</span><span class="t">${money(total())}</span></div><button class="btn btn-primary btn-block" id="pay" type="button" style="margin-top:10px;">Pagar ${money(total())}</button><button class="link-btn" id="more" type="button" style="display:block;margin:8px auto 0;">Seguir comprando</button></div>`);
+            container.appendChild(box);
+            box.querySelectorAll('.cart-rm').forEach(b => b.onclick = () => { state.cart.splice(+b.dataset.i, 1); cart(); });
+            box.querySelector('#more').onclick = grid; box.querySelector('#pay').onclick = checkout;
+          });
+        }
+        function checkout(){
+          render(() => {
+            const box = el(`<div class="reveal"><button class="link-btn" id="back" type="button">← Volver al carrito</button><div class="lbl-s">Método de pago</div><div style="font-size:13px;color:#c9d6c2;margin-bottom:13px;">Total: <b style="color:#c7ff6d;">${money(total())}</b> · ${state.cart.length} artículo(s)</div><button class="btn btn-primary btn-block" id="cash" type="button">Pagar en efectivo 💵</button><button class="btn btn-dark btn-block" id="tr" type="button" style="margin-top:10px;">Transferencia 💳</button></div>`);
+            container.appendChild(box);
+            box.querySelector('#back').onclick = cart; box.querySelector('#cash').onclick = () => done('cash'); box.querySelector('#tr').onclick = transfer;
+          });
+        }
+        function transfer(){
+          render(() => {
+            const box = el(`<div class="reveal"><div class="pay-card"><div style="color:#aab6aa;font-size:12px;font-weight:800;">TOTAL A TRANSFERIR</div><div class="amount">$${total()} <span>MXN</span></div>${bankFieldsHtml(state.num)}</div><div style="font-size:12px;color:#dfe8db;margin:2px 4px 12px;">Realiza la transferencia y confirma para validarla.</div><button class="btn btn-primary btn-block" id="paid" type="button">Ya transferí ✅</button><div class="countdown" id="valbox" style="display:none;margin-top:14px;"><div class="countdown-top"><span>Validando con el banco…</span><strong class="count">20 s</strong></div><div class="bar"><span class="prog"></span></div></div></div>`);
+            container.appendChild(box);
+            const valbox = box.querySelector('#valbox');
+            box.querySelector('#paid').onclick = async (e) => { e.currentTarget.style.display = 'none'; valbox.style.display = 'block'; setSub('Validando transferencia…'); const okv = await runValidation(valbox.querySelector('.count'), valbox.querySelector('.prog'), my); if (!okv || my !== session) return; done('tr'); };
+          });
+        }
+        function done(mode){
+          if (my !== session) return; setSub(liveSub(mode === 'tr' ? 'Pago confirmado' : 'Pedido confirmado'));
+          const items = state.cart.map(i => `${i.name} (${i.size})`).join(', ');
+          render(() => {
+            const box = el(`<div class="status-card reveal"><div class="status-good"><div class="big"><span class="check">✓</span> ${mode === 'tr' ? '¡PAGO CONFIRMADO!' : '¡PEDIDO CONFIRMADO!'}</div><div class="tiny">${items || 'Tu pedido'} · ${money(total())}</div></div><div class="info-block"><div class="lbl">Pedido</div><div style="font-size:15px;font-weight:800;color:#dfffac;margin-top:4px;">#${state.num}</div></div><div class="info-block"><div class="lbl">Entrega estimada</div><div style="font-size:22px;font-weight:800;color:#c7ff6d;margin-top:6px;font-family:Sora;">2–3 DÍAS</div><div style="font-size:12px;color:#dfe8db;margin-top:6px;">Guía de rastreo por WhatsApp.</div></div></div>`);
+            container.appendChild(box);
+            container.appendChild(el(`<div class="reveal">${waBtn('Confirmar pedido por WhatsApp', `Quiero confirmar mi pedido #${state.num}: ${items} — total ${money(total())}.`)}</div>`));
+            container.appendChild(el(`<button class="btn btn-dark btn-block" id="again" type="button" style="margin-top:10px;">Seguir comprando</button>`));
+            container.querySelector('#again').onclick = () => { state.cart = []; state.num = orderNum(); grid(); };
+          });
+        }
+        grid();
+      }
+    };
+
+    /* ===== APP 3 · RESERVAS ===== */
+    const BookingApp = {
+      name: 'BarberArte', badge: '📅', sub: liveSub('Agenda disponible'), frame: 'phone',
+      services: [
+        { name: 'Corte clásico', sub: '30 min', price: 150, emoji: '✂️', kw: '1503951914875-452162b0f3f1' },
+        { name: 'Corte + barba', sub: '45 min', price: 230, emoji: '💈', kw: '1605497788044-5a32c7078486' },
+        { name: 'Arreglo de barba', sub: '20 min', price: 90, emoji: '🧔', kw: '1605497788044-5a32c7078486' },
+        { name: 'Tinte', sub: '60 min', price: 400, emoji: '🎨', kw: '1503951914875-452162b0f3f1' },
+      ],
+      mount(container){
+        const my = session;
+        const state = { service: null, date: null, time: null };
+        const render = (fn) => { if (my !== session) return; container.innerHTML = ''; fn(); scrollTop(); };
+        const days = []; const base = new Date(); const DOW = ['DOM', 'LUN', 'MAR', 'MIÉ', 'JUE', 'VIE', 'SÁB'];
+        for (let i = 0; i < 5; i++){ const d = new Date(base); d.setDate(base.getDate() + i); days.push({ key: i, label: i === 0 ? 'HOY' : (i === 1 ? 'MAÑ' : DOW[d.getDay()]), num: d.getDate() }); }
+        const SLOTS = [{ t: '10:00' }, { t: '10:30', busy: 1 }, { t: '11:00' }, { t: '11:30' }, { t: '12:00', busy: 1 }, { t: '12:30' }, { t: '16:00' }, { t: '16:30' }, { t: '17:00', busy: 1 }];
+        function chooseService(){
+          render(() => {
+            container.appendChild(el(`<div class="book-hero reveal">${ph('1585747860715-2ba37e788b70', 0, '💈')}<div class="ov"><div class="bh-name">BarberArte</div><div class="bh-meta">★ 4.9 · Sucursal Centro · Abierto hoy</div></div></div>`));
+            container.appendChild(el(`<div class="book-intro">Agenda tu cita en segundos. Elige un servicio:</div>`));
+            BookingApp.services.forEach((s) => { const b = el(`<button class="opt" type="button">${ph(s.kw, 0, s.emoji)}<div><div class="o-name">${s.name}</div><div class="o-sub">${s.sub}</div></div><div class="o-price">$${s.price}</div></button>`); b.onclick = () => { state.service = s; chooseDateTime(); }; container.appendChild(b); });
+          });
+        }
+        function chooseDateTime(){
+          render(() => {
+            container.appendChild(el(`<button class="link-btn" id="back" type="button">← Cambiar servicio</button>`));
+            container.appendChild(el(`<div style="font-size:14px;font-weight:800;margin:4px 0 2px;">${state.service.emoji} ${state.service.name} · $${state.service.price}</div>`));
+            container.appendChild(el(`<div class="lbl-s">Elige el día</div>`));
+            const dateRow = el(`<div class="date-row"></div>`); container.appendChild(dateRow);
+            container.appendChild(el(`<div class="lbl-s">Horarios disponibles</div>`));
+            const slotGrid = el(`<div class="slot-grid"></div>`); container.appendChild(slotGrid);
+            const cta = el(`<button class="btn btn-primary btn-block" id="cta" type="button" style="margin-top:16px;opacity:.5;" disabled>Selecciona día y hora</button>`); container.appendChild(cta);
+            const refresh = () => { const ready = state.date != null && state.time != null; cta.disabled = !ready; cta.style.opacity = ready ? '1' : '.5'; cta.textContent = ready ? `Reservar ${state.date.label.replace('MAÑ','MAÑANA')} ${state.time}` : 'Selecciona día y hora'; };
+            days.forEach(d => { const b = el(`<button class="date" type="button"><span class="dow">${d.label}</span><span class="dnum">${d.num}</span></button>`); if (state.date && state.date.key === d.key) b.classList.add('sel'); b.onclick = () => { state.date = d; state.time = null; dateRow.querySelectorAll('.date').forEach(x => x.classList.remove('sel')); b.classList.add('sel'); slotGrid.querySelectorAll('.slot').forEach(x => x.classList.remove('sel')); refresh(); }; dateRow.appendChild(b); });
+            SLOTS.forEach(s => { const b = el(`<button class="slot ${s.busy ? 'busy' : ''}" type="button" ${s.busy ? 'disabled' : ''}>${s.t}</button>`); if (!s.busy) b.onclick = () => { state.time = s.t; slotGrid.querySelectorAll('.slot').forEach(x => x.classList.remove('sel')); b.classList.add('sel'); refresh(); }; slotGrid.appendChild(b); });
+            container.querySelector('#back').onclick = chooseService; cta.onclick = confirm; refresh();
+          });
+        }
+        function confirm(){
+          render(() => {
+            const dlabel = `${state.date.label.replace('HOY','Hoy').replace('MAÑ','Mañana')} ${state.date.num}`;
+            container.appendChild(el(`<div class="lbl-s reveal">Confirma tu cita</div>`));
+            container.appendChild(el(`<div class="summary reveal"><div class="row"><span class="k">Servicio</span><span class="v">${state.service.emoji} ${state.service.name}</span></div><div class="row"><span class="k">Duración</span><span class="v">${state.service.sub}</span></div><div class="row"><span class="k">Día</span><span class="v">${dlabel}</span></div><div class="row"><span class="k">Hora</span><span class="v">${state.time}</span></div><div class="row"><span class="k">Sucursal</span><span class="v">Centro</span></div><div class="row"><span class="k">Precio</span><span class="v" style="color:#c7ff6d;">$${state.service.price}</span></div></div>`));
+            container.appendChild(el(`<button class="btn btn-primary btn-block" id="ok" type="button" style="margin-top:14px;">Confirmar cita ✅</button>`));
+            container.appendChild(el(`<button class="link-btn" id="back" type="button" style="display:block;margin:8px auto 0;">Cambiar horario</button>`));
+            container.querySelector('#ok').onclick = done; container.querySelector('#back').onclick = chooseDateTime;
+          });
+        }
+        function done(){
+          if (my !== session) return; setSub(liveSub('Cita confirmada'));
+          const dlabel = `${state.date.label.replace('HOY','Hoy').replace('MAÑ','Mañana')} ${state.date.num}`;
+          render(() => {
+            container.appendChild(el(`<div class="status-card reveal"><div class="status-good"><div class="big"><span class="check">✓</span> ¡CITA AGENDADA!</div><div class="tiny">${state.service.name} · ${dlabel} a las ${state.time}</div></div><div class="info-block"><div class="lbl">Recordatorio</div><div style="display:flex;align-items:center;gap:10px;margin-top:8px;"><div class="check" style="width:30px;height:30px;background:#1b211d;color:#fff;">🔔</div><div><div style="font-size:14px;font-weight:800;color:#dfffac;">Aviso por WhatsApp</div><div style="font-size:12px;color:#dfe8db;opacity:.9;">Recordatorio 1 h antes</div></div></div></div><div class="info-block"><div class="lbl">Ubicación</div><div style="font-size:14px;font-weight:800;color:#f1f6ef;margin-top:4px;">BarberArte · Sucursal Centro</div></div></div>`));
+            container.appendChild(el(`<div class="reveal">${waBtn('Confirmar cita por WhatsApp', `Quiero confirmar mi cita: ${state.service.name} el ${dlabel} a las ${state.time} (BarberArte Centro).`)}</div>`));
+            container.appendChild(el(`<button class="btn btn-dark btn-block" id="again" type="button" style="margin-top:10px;">Agendar otra cita</button>`));
+            container.querySelector('#again').onclick = () => { state.service = null; state.date = null; state.time = null; chooseService(); };
+          });
+        }
+        chooseService();
+      }
+    };
+
+    /* ===== APP 4 · INMOBILIARIA ===== */
+    const EstateApp = {
+      name: 'InmoNexa', badge: '🏠', sub: liveSub('En venta'), frame: 'phone',
+      props: [
+        { title: 'Depto en Polanco', loc: 'Polanco, CDMX', price: 4800000, rec: 2, ba: 2, m2: 85, emoji: '🏢', kw: '1603072845032-7b5bd641a82a', desc: 'Departamento luminoso con acabados de lujo, cocina integral y amenidades.' },
+        { title: 'Casa en Coyoacán', loc: 'Coyoacán, CDMX', price: 7200000, rec: 3, ba: 3, m2: 180, emoji: '🏠', kw: '1594873604892-b599f847e859', desc: 'Casa familiar con jardín, estudio y doble cochera en zona tranquila.' },
+        { title: 'Loft Roma Norte', loc: 'Roma Norte, CDMX', price: 3500000, rec: 1, ba: 1, m2: 60, emoji: '🛋️', kw: '1666282167632-c613fbeb163c', desc: 'Loft de diseño con doble altura, ideal para una persona o pareja.' },
+      ],
+      mount(container){
+        const my = session;
+        const render = (fn) => { if (my !== session) return; container.innerHTML = ''; fn(); scrollTop(); };
+        const pf = (n) => '$' + n.toLocaleString('es-MX');
+        function list(){
+          render(() => {
+            container.appendChild(el(`<div class="shop-bar"><div><div class="cat">InmoNexa</div><div class="catsub">Propiedades disponibles</div></div></div>`));
+            EstateApp.props.forEach((p) => { const c = el(`<button class="estate reveal" type="button">${ph(p.kw, 0, p.emoji)}<div class="estate-body"><div class="estate-price">${pf(p.price)}</div><div class="estate-title">${p.title}</div><div class="estate-loc">📍 ${p.loc}</div><div class="estate-specs"><span>🛏 ${p.rec}</span><span>🛁 ${p.ba}</span><span>📐 ${p.m2} m²</span></div></div></button>`); c.onclick = () => detail(p); container.appendChild(c); });
+          });
+        }
+        function detail(p){
+          render(() => {
+            const box = el(`<div class="reveal"><button class="link-btn" id="back" type="button">← Volver</button>${ph(p.kw, 0, p.emoji, 'detail-ph')}<div class="estate-price" style="font-size:24px;margin-top:13px;">${pf(p.price)}</div><div class="detail-name" style="margin-top:2px;">${p.title}</div><div class="estate-loc" style="margin-top:4px;">📍 ${p.loc}</div><div class="estate-specs big" style="margin-top:12px;"><span>🛏 ${p.rec} rec</span><span>🛁 ${p.ba} baños</span><span>📐 ${p.m2} m²</span></div><div class="detail-desc">${p.desc}</div>${waBtn('Agendar visita por WhatsApp', `Me interesa la propiedad "${p.title}" (${pf(p.price)}, ${p.loc}). ¿Podemos agendar una visita?`)}<button class="btn btn-dark btn-block" id="more" type="button" style="margin-top:10px;">Ver más propiedades</button></div>`);
+            container.appendChild(box);
+            box.querySelector('#back').onclick = list; box.querySelector('#more').onclick = list;
+          });
+        }
+        list();
+      }
+    };
+
+    /* ===== APP 5 · PÁGINA WEB / LANDING (marco navegador) ===== */
+    const LandingApp = {
+      name: 'La Terraza', badge: '🌐', sub: '', frame: 'web', url: 'www.laterraza.mx',
+      mount(container){
+        const dish = [
+          { n: 'Hamburguesa de la casa', d: 'Carne de res, queso y tocino', p: 165, kw: '1568901346375-23c9450c58cd', e: '🍔' },
+          { n: 'Doble queso', d: 'Doble carne, doble sabor', p: 195, kw: '1572802419224-296b0aeee0d9', e: '🍔' },
+          { n: 'BBQ Bacon', d: 'Tocino crujiente y salsa BBQ', p: 189, kw: '1571091718767-18b5b1457add', e: '🍔' },
+        ];
+        const cards = dish.map(x => `<div class="lp-card">${ph(x.kw, 0, x.e)}<div class="lp-cbody"><div class="lp-cn">${x.n}</div><div class="lp-cd">${x.d}</div><div class="lp-cp">$${x.p}</div></div></div>`).join('');
+        container.innerHTML = `
+          <div class="lp">
+            <div class="lp-hero">
+              ${ph('1571091718767-18b5b1457add', 0, '🍔')}
+              <div class="scrim"></div>
+              <div class="lp-nav"><b>🍔 La Terraza</b><div class="lp-menu"><span>Menú</span><span>Nosotros</span><span>Contacto</span></div></div>
+              <div class="lp-hero-ov">
+                <div class="lp-eyebrow">Restaurante · CDMX</div>
+                <h2>Las mejores hamburguesas de la ciudad</h2>
+                <p>Ingredientes frescos, carne 100% res y el mejor ambiente para disfrutar con quien quieras.</p>
+                <div class="lp-actions"><a class="lp-btn" href="${waUrl('Quiero hacer un pedido en La Terraza 🍔')}" target="_blank" rel="noopener">Ordenar ahora</a><a class="lp-btn ghost" href="${waUrl('Quiero reservar una mesa en La Terraza 🍔')}" target="_blank" rel="noopener">Reservar mesa</a></div>
+              </div>
+            </div>
+            <div class="lp-section">
+              <h3>Lo más pedido</h3>
+              <div class="lp-sub">Nuestros favoritos, recién hechos para ti</div>
+              <div class="lp-grid">${cards}</div>
+            </div>
+            <div class="lp-about">
+              ${ph('1550547660-d9450f859349', 0, '🍔')}
+              <div>
+                <h3>Hechas con pasión</h3>
+                <p>Desde 2015 preparamos cada hamburguesa al momento, con pan artesanal y carne seleccionada. Un lugar para reunirte, comer rico y volver.</p>
+                <div class="lp-stats"><div><b>+12K</b><span>clientes felices</span></div><div><b>4.9★</b><span>en reseñas</span></div><div><b>10 años</b><span>de sabor</span></div></div>
+              </div>
+            </div>
+            <div class="lp-cta">
+              <h3>¿Listo para visitarnos?</h3>
+              <p>Reserva tu mesa o haz tu pedido en segundos.</p>
+              <a class="lp-btn" href="${waUrl('Quiero reservar / ordenar en La Terraza 🍔')}" target="_blank" rel="noopener">Reservar por WhatsApp</a>
+            </div>
+            <div class="lp-footer">La Terraza · Av. Reforma 123, CDMX · Tel. 55 1234 5678 · Abierto todos los días</div>
+          </div>`;
+      }
+    };
+
+    const GymSite = {
+      name: 'PulseFit', url: 'www.pulsefit.mx',
+      mount(container){
+        const cl = [
+          { n: 'Fuerza', d: 'Levantamiento y máquinas', t: 'Lun · Mié · Vie', kw: '1517836357463-d25dfeac3438', e: '🏋️' },
+          { n: 'Funcional', d: 'Quema y resistencia', t: 'Mar · Jue', kw: '1571902943202-507ec2618e8f', e: '🤸' },
+          { n: 'Cardio', d: 'HIIT y spinning', t: 'Todos los días', kw: '1534438327276-14e5300c3a48', e: '🚴' },
+        ];
+        const cards = cl.map(x => `<div class="lp-card">${ph(x.kw, 0, x.e)}<div class="lp-cbody"><div class="lp-cn">${x.n}</div><div class="lp-cd">${x.d}</div><div class="lp-cp">${x.t}</div></div></div>`).join('');
+        container.innerHTML = `
+          <div class="lp gym">
+            <div class="lp-hero">${ph('1534438327276-14e5300c3a48', 0, '💪')}<div class="scrim"></div>
+              <div class="lp-nav"><b>💪 PulseFit</b><div class="lp-menu"><span>Clases</span><span>Planes</span><span>Contacto</span></div></div>
+              <div class="lp-hero-ov"><div class="lp-eyebrow">Gimnasio · Abierto 24/7</div><h2>Entrena sin límites</h2><p>Equipo de última generación, clases todos los días y coaches que te llevan a tu meta.</p>
+                <div class="lp-actions"><a class="lp-btn" href="${waUrl('Quiero inscribirme en PulseFit 💪')}" target="_blank" rel="noopener">Inscríbete hoy</a><a class="lp-btn ghost" href="${waUrl('Quiero una clase de prueba gratis en PulseFit 💪')}" target="_blank" rel="noopener">Clase de prueba</a></div></div>
+            </div>
+            <div class="lp-section"><h3>Nuestras clases</h3><div class="lp-sub">Encuentra la tuya y empieza esta semana</div><div class="lp-grid">${cards}</div></div>
+            <div class="lp-about">${ph('1571902943202-507ec2618e8f', 0, '🏋️')}<div><h3>Más que un gimnasio</h3><p>Una comunidad que te motiva. Rutinas personalizadas, seguimiento de progreso y el mejor ambiente para no rendirte.</p><div class="lp-stats"><div><b>+800</b><span>socios activos</span></div><div><b>25</b><span>clases/semana</span></div><div><b>12</b><span>coaches</span></div></div></div></div>
+            <div class="lp-cta"><h3>Tu primera semana es gratis</h3><p>Ven, entrena y siente la diferencia. Sin compromiso.</p><a class="lp-btn" href="${waUrl('Quiero mi semana gratis en PulseFit 💪')}" target="_blank" rel="noopener">Reservar por WhatsApp</a></div>
+            <div class="lp-footer">PulseFit · Av. del Deporte 45, CDMX · Abierto 24/7 · Tel. 55 9876 5432</div>
+          </div>`;
+      }
+    };
+
+    const CafeSite = {
+      name: 'Café Aurora', url: 'www.cafeaurora.mx',
+      mount(container){
+        const mn = [
+          { n: 'Latte de la casa', d: 'Espresso doble y leche cremada', p: 55, kw: '1453614512568-c4024d13c247', e: '☕' },
+          { n: 'Cold Brew', d: '12 horas de extracción en frío', p: 60, kw: '1542372147193-a7aca54189cd', e: '🧊' },
+          { n: 'Para llevar', d: 'Tu favorito, listo en minutos', p: 48, kw: '1495474472287-4d71bcdd2085', e: '🥤' },
+        ];
+        const cards = mn.map(x => `<div class="lp-card">${ph(x.kw, 0, x.e)}<div class="lp-cbody"><div class="lp-cn">${x.n}</div><div class="lp-cd">${x.d}</div><div class="lp-cp">$${x.p}</div></div></div>`).join('');
+        container.innerHTML = `
+          <div class="lp cafe">
+            <div class="lp-hero">${ph('1600093463592-8e36ae95ef56', 0, '☕')}<div class="scrim"></div>
+              <div class="lp-nav"><b>☕ Café Aurora</b><div class="lp-menu"><span>Menú</span><span>Nosotros</span><span>Visítanos</span></div></div>
+              <div class="lp-hero-ov"><div class="lp-eyebrow">Café de especialidad</div><h2>Tu café favorito te espera</h2><p>Grano de origen, recién tostado y servido con cariño en un espacio para quedarte.</p>
+                <div class="lp-actions"><a class="lp-btn" href="${waUrl('Quiero ordenar en Café Aurora ☕')}" target="_blank" rel="noopener">Ordenar ahora</a><a class="lp-btn ghost" href="${waUrl('¿Cuál es su horario en Café Aurora? ☕')}" target="_blank" rel="noopener">Ver horario</a></div></div>
+            </div>
+            <div class="lp-section"><h3>Nuestro menú</h3><div class="lp-sub">Lo que más piden nuestros clientes</div><div class="lp-grid">${cards}</div></div>
+            <div class="lp-about">${ph('1453614512568-c4024d13c247', 0, '☕')}<div><h3>Hecho con calma</h3><p>Tostamos en pequeños lotes y preparamos cada taza al momento. Un rincón tranquilo para trabajar, leer o platicar.</p><div class="lp-stats"><div><b>4.9★</b><span>en reseñas</span></div><div><b>+30</b><span>bebidas</span></div><div><b>Wi-Fi</b><span>gratis</span></div></div></div></div>
+            <div class="lp-cta"><h3>Pasa a vernos</h3><p>Te esperamos con tu bebida favorita lista.</p><a class="lp-btn" href="${waUrl('Quiero visitar Café Aurora ☕')}" target="_blank" rel="noopener">Escríbenos por WhatsApp</a></div>
+            <div class="lp-footer">Café Aurora · Calle del Aroma 8, CDMX · Lun–Dom 7:00–21:00</div>
+          </div>`;
+      }
+    };
+
+    const APPS = { comida: ChatApp, ropa: ShopApp, reservas: BookingApp, inmueble: EstateApp };
+    const WEBS = { laterraza: LandingApp, pulsefit: GymSite, cafe: CafeSite };
+
+    function mountApp(key){
+      session++; currentKey = key;
+      if (valTimer){ clearInterval(valTimer); valTimer = null; }
+      const app = APPS[key];
+      appButtons.forEach(b => b.classList.toggle('active', b.dataset.app === key));
+      stageApp.innerHTML = `<div class="phoneframe reveal"><div class="screen-head"><div class="title"><div class="bot-badge" id="dbadge">${app.badge}</div><div><h3 id="dtitle">${app.name}</h3><div class="sub" id="dsub">${app.sub}</div></div></div><div class="dots">•••</div></div><div class="app-body" id="dbody"></div></div>`;
+      titleEl = stageApp.querySelector('#dtitle'); subEl = stageApp.querySelector('#dsub'); badgeEl = stageApp.querySelector('#dbadge');
+      body = stageApp.querySelector('#dbody'); body.innerHTML = '';
+      app.mount(body);
+    }
+    function mountWeb(key){
+      const site = WEBS[key];
+      webButtons.forEach(b => b.classList.toggle('active', b.dataset.web === key));
+      stageWeb.innerHTML = `<div class="webframe reveal"><div class="webbar"><span class="wd"></span><span class="wd"></span><span class="wd"></span><div class="urlbar">🔒 ${site.url}</div></div><div class="app-body web" id="wbody"></div></div>`;
+      site.mount(stageWeb.querySelector('#wbody'));
+    }
+
+    appButtons.forEach(b => b.addEventListener('click', () => mountApp(b.dataset.app)));
+    webButtons.forEach(b => b.addEventListener('click', () => mountWeb(b.dataset.web)));
+    document.querySelectorAll('.plan-cta').forEach(a => a.addEventListener('click', (e) => { e.preventDefault(); window.open(waUrl(`Me interesa el plan "${a.dataset.plan}". ¿Me dan más información?`), '_blank', 'noopener'); }));
+    mountWeb('laterraza'); mountApp('comida');
+
+    /* ===== ASISTENTE FLOTANTE (chatbot del sitio) ===== */
+    (function(){
+      const launch = el('<button class="cw-launch" id="cwLaunch" aria-label="Abrir chat"><span class="ico">💬</span><span class="lbl">¿Te ayudo?</span></button>');
+      const panel = el(`<div class="cw-panel" id="cwPanel" role="dialog" aria-label="Asistente Nexa">
+        <div class="cw-head"><div class="ava">🚀</div><div><h4>Asistente Nexa</h4><div class="st"><span class="live"></span>En línea · responde al instante</div></div><button class="cw-x" id="cwX" aria-label="Cerrar">✕</button></div>
+        <div class="cw-body" id="cwBody"></div>
+        <div class="cw-foot"><a href="${waUrl('Hola 👋 quiero información sobre una app o página web.')}" target="_blank" rel="noopener">o escríbenos directo por WhatsApp →</a></div>
+      </div>`);
+      document.body.appendChild(launch); document.body.appendChild(panel);
+      const cwBody = panel.querySelector('#cwBody');
+      let started = false, busy = false;
+      const sb = () => { cwBody.scrollTop = cwBody.scrollHeight; };
+      const addBot = (h) => { cwBody.appendChild(el(`<div class="chatline reveal"><div class="avatar">🚀</div><div class="bubble bot">${h}</div></div>`)); sb(); };
+      const addUser = (h) => { cwBody.appendChild(el(`<div class="chatline reveal"><div class="bubble user">${h}</div></div>`)); sb(); };
+      const typing = () => { const t = el('<div class="chatline reveal"><div class="avatar">🚀</div><div class="bubble bot typing"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>'); cwBody.appendChild(t); sb(); return t; };
+      async function botSay(h, ms = 850){ busy = true; const t = typing(); await sleep(ms); t.remove(); addBot(h); busy = false; }
+      function chips(opts){ const row = el('<div class="quick-row"></div>'); opts.forEach(o => { const b = el('<button class="chip" type="button"></button>'); b.textContent = o.label; b.onclick = () => { if (busy) return; row.remove(); o.go(o); }; row.appendChild(b); }); cwBody.appendChild(row); sb(); }
+      const goWA = (msg) => window.open(waUrl(msg), '_blank', 'noopener');
+      const goSec = (id) => { close(); const t = document.querySelector(id); if (t) t.scrollIntoView({ behavior: 'smooth' }); };
+
+      function menu(){ chips([
+        { label: '🧩 Ver servicios', go: servicios },
+        { label: '💲 Precios', go: precios },
+        { label: '📅 Agendar llamada', go: agendar },
+        { label: '💬 WhatsApp', go: () => goWA('Hola 👋 me interesa una app o página web.') },
+      ]); }
+      async function start(){ if (started) return; started = true; await botSay('¡Hola! 👋 Soy el asistente de <b>Nexa Studio</b>. ¿En qué te puedo ayudar?', 650); menu(); }
+      async function servicios(){ addUser('Ver servicios'); await botSay('Hacemos 🤖 chatbots, 🛍️ tiendas en línea, 📅 sistemas de citas, 🏠 catálogos y 🌐 páginas web. ¿Qué te interesa?', 1000); chips([
+        { label: '📱 Apps móviles', go: apps }, { label: '🌐 Páginas web', go: webs }, { label: '💲 Precios', go: precios }, { label: '⬅️ Menú', go: () => menu() } ]); }
+      async function apps(){ addUser('Apps móviles'); await botSay('Apps que atienden y venden por ti: chatbots de pedidos, tiendas con carrito y pago, agenda de citas y catálogos. ¿Las vemos?', 1050); chips([
+        { label: '👀 Ver demos de apps', go: () => goSec('#apps') }, { label: '💬 Cotizar por WhatsApp', go: () => goWA('Hola 👋 quiero cotizar una app móvil.') }, { label: '⬅️ Menú', go: () => menu() } ]); }
+      async function webs(){ addUser('Páginas web'); await botSay('Sitios a la medida: restaurante, gimnasio, cafetería… con diseño propio y listos para vender. ¿Los vemos?', 1050); chips([
+        { label: '👀 Ver demos de webs', go: () => goSec('#webs') }, { label: '💬 Cotizar por WhatsApp', go: () => goWA('Hola 👋 quiero cotizar una página web.') }, { label: '⬅️ Menú', go: () => menu() } ]); }
+      async function precios(){ addUser('Precios'); await botSay('Planes de ejemplo: 🤖 Chatbot desde <b>$2,500/mes</b>, 🛍️ Tienda desde <b>$4,900/mes</b> y 🌐 Web a cotización. El precio final depende de lo que necesites.', 1150); chips([
+        { label: '📅 Agendar llamada', go: agendar }, { label: '💬 WhatsApp', go: () => goWA('Hola 👋 quiero conocer precios y planes.') }, { label: '⬅️ Menú', go: () => menu() } ]); }
+      async function agendar(){ addUser('Agendar llamada'); await botSay('¡Perfecto! Mándanos un WhatsApp con tu nombre y un horario y te llamamos. 📞', 1000); chips([
+        { label: '💬 Agendar por WhatsApp', go: () => goWA('Hola 👋 quiero agendar una llamada. Mi nombre es ___ y me acomoda ___.') }, { label: '⬅️ Menú', go: () => menu() } ]); }
+
+      function open(){ panel.classList.add('open'); launch.classList.add('hide'); start(); }
+      function close(){ panel.classList.remove('open'); launch.classList.remove('hide'); }
+      launch.onclick = open;
+      panel.querySelector('#cwX').onclick = close;
+    })();
+  </script>
+</body>
+</html>
